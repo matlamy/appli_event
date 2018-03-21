@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lamy.mathilde.projet100h.Activity.ConnexionActivity">
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Mail étudiant"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/buttonConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="392dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonConnexion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="105dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Créer un compte ?"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

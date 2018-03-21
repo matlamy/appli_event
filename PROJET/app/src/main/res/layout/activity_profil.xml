@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lamy.mathilde.projet100h.Activity.ProfilActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/picture_frame"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageButtonMenu"
+        android:layout_toEndOf="@+id/imageButtonMenu" />
+
+    <TextView
+        android:id="@+id/textViewNomPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="NOM Prénom"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEcole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewNomPrenom"
+        android:layout_below="@+id/textViewNomPrenom"
+        android:layout_marginTop="13dp"
+        android:text="Ecole"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewPageAccueil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Ma page d'accueil :"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewEcole"
+        android:layout_toStartOf="@+id/textViewPage"
+        android:layout_marginEnd="14dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewNomPrenom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/textViewGeoloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewPageAccueil"
+        android:layout_centerVertical="true"
+        android:text="Géolocalisaton"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="MON PROFIL"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/buttonEventPasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonDeconnexion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Mes événements passés >" />
+
+    <Button
+        android:id="@+id/buttonDeconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="Déconnexion" />
+
+    <TextView
+        android:id="@+id/textViewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textViewPageAccueil"
+        android:layout_alignBottom="@+id/textViewPageAccueil"
+        android:layout_alignEnd="@+id/buttonDeconnexion" />
+
+    <ToggleButton
+        android:id="@+id/buttonOnOffGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textViewPageAccueil"
+        android:text="ToggleButton"
+        android:textOff="Activer"
+        android:textOn="Désactiver" />
+
+</RelativeLayout>
