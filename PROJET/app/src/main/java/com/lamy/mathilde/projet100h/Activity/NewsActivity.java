@@ -10,6 +10,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 
+import com.lamy.mathilde.projet100h.Adapter.ListViewAdapter;
 import com.lamy.mathilde.projet100h.R;
 
 public class NewsActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class NewsActivity extends AppCompatActivity {
 
         upcomingEvents = (ListView) findViewById(R.id.upcoming_events);
         // On crée l'adapter par rapport aux données présentes dans la liste
-        upcomingEventsAdapter = new ListAdapterEvents(this, upcomingEventList);
+        upcomingEventsAdapter = new ListViewAdapter(this, upcomingEventList);
         // On attache l'adapter
         upcomingEvents.setAdapter((ListAdapter) upcomingEventsAdapter);
         // On crée enfin la méthode qui va détecter le clic sur un item en particulier

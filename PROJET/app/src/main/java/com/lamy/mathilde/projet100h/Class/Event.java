@@ -1,5 +1,6 @@
 package com.lamy.mathilde.projet100h.Class;
 import com.google.firebase.database.Exclude;
+import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.sql.Time;
 import java.sql.Timestamp;
@@ -11,6 +12,7 @@ import java.util.Map;
  * Created by Mathilde on 21/03/2018.
  */
 
+@IgnoreExtraProperties
 public class Event {
 
     /* attributs de la classe Event */

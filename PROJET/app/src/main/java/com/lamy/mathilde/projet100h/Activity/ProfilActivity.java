@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ToggleButton;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.lamy.mathilde.projet100h.R;
 
 public class ProfilActivity extends AppCompatActivity {
