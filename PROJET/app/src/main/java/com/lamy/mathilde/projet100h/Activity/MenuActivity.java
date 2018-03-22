@@ -30,6 +30,7 @@ public class MenuActivity extends AppCompatActivity {
         btnPlan = (Button) findViewById(R.id.buttonPlan)  ;
         btnCalendrier = (Button) findViewById(R.id.buttonCalendrier) ;
         btnNews = (Button) findViewById(R.id.buttonNews);
+        btnProfil = (Button) findViewById(R.id.buttonProfil) ;
 
         btnPlan.setOnClickListener(new View.OnClickListener() {
             @Override

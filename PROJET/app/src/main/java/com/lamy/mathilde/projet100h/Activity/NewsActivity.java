@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import com.lamy.mathilde.projet100h.Adapter.ListViewAdapter;
+import com.lamy.mathilde.projet100h.Class.Event;
 import com.lamy.mathilde.projet100h.R;
 
 public class NewsActivity extends AppCompatActivity {
