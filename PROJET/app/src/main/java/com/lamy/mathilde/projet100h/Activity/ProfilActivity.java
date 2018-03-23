@@ -51,7 +51,7 @@ public class ProfilActivity extends AppCompatActivity {
         /*btnOldEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfilActivity.this, OldEventsActivity.class);
+                Intent intent = new Intent(ProfilActivity.this, NewsActivity.class);
                 startActivity(intent);
             }
         });**/
