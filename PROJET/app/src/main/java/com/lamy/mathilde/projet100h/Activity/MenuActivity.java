@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 import android.content.Intent;
 
@@ -15,6 +16,10 @@ public class MenuActivity extends AppCompatActivity {
     private Button btnCalendrier;
     private Button btnNews;
     private Button btnProfil;
+    private String[] drawerItemsList;
+    private ListView myDrawer;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

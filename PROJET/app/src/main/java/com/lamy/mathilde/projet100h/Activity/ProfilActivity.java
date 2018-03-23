@@ -48,18 +48,18 @@ public class ProfilActivity extends AppCompatActivity {
         spinnerPages.setAdapter(adapter);
         */
 
-        btnOldEvents.setOnClickListener(new View.OnClickListener() {
+        /*btnOldEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProfilActivity.this, OldEventsActivity.class);
                 startActivity(intent);
             }
-        });
+        });**/
 
         btnDeconnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut()
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(ProfilActivity.this, ConnexionActivity.class);
                 startActivity(intent);
             }
