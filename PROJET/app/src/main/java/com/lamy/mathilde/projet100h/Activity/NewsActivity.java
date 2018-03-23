@@ -34,7 +34,7 @@ public class NewsActivity extends AppCompatActivity {
         upcomingEvents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent eventPreview = new Intent(NewsActivity.this, NewsActivity.class);
+                Intent eventPreview = new Intent(NewsActivity.this, DetailsEventActivity.class);
                 eventPreview.putExtra("idEvent", upcomingEventList.get(i).getIdEvent());
                 eventPreview.putExtra("eventName", upcomingEventList.get(i).getNameEvent());
                 eventPreview.putExtra("dateStart", upcomingEventList.get(i).getDateStart());
@@ -44,9 +44,8 @@ public class NewsActivity extends AppCompatActivity {
                 eventPreview.putExtra("prix", upcomingEventList.get(i).getPrix());
                 eventPreview.putExtra("nbParticip", upcomingEventList.get(i).getNbParticip());
                 startActivity(eventPreview);
-            }
-        });
 
-
+}
+});
     }
 }
