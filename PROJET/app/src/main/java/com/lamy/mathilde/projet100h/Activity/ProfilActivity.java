@@ -16,7 +16,7 @@ public class ProfilActivity extends AppCompatActivity {
     private Button btnDeconnexion ;
     private ImageButton btnModif ;
     private ImageButton btnMenu ;
-    private Button btnOldEvents ;
+    // private Button btnOldEvents ;
     private ToggleButton btnActivGeoloc ;
 
 
@@ -25,13 +25,14 @@ public class ProfilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
-        btnOldEvents = (Button) findViewById(R.id.buttonEventPasse) ;
+        //btnOldEvents = (Button) findViewById(R.id.buttonEventPasse) ;
         btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
         btnModif = (ImageButton) findViewById(R.id.imageButtonModify);
         btnActivGeoloc = (ToggleButton) findViewById(R.id.buttonOnOffGeo);
         btnDeconnexion = (Button) findViewById(R.id.buttonDeconnexion);
 
 
+<<<<<<< HEAD
 
        /* spinnerPages = (Spinner) findViewById(R.id.spinnerPageAccueil);
         List pagesList = new ArrayList();
@@ -49,17 +50,28 @@ public class ProfilActivity extends AppCompatActivity {
         */
 
         /*btnOldEvents.setOnClickListener(new View.OnClickListener() {
+=======
+        /* btnOldEvents.setOnClickListener(new View.OnClickListener() {
+>>>>>>> mathilde
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProfilActivity.this, NewsActivity.class);
                 startActivity(intent);
             }
+<<<<<<< HEAD
         });**/
+=======
+        }); */
+>>>>>>> mathilde
 
         btnDeconnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 FirebaseAuth.getInstance().signOut();
+=======
+                FirebaseAuth.getInstance().signOut() ;
+>>>>>>> mathilde
                 Intent intent = new Intent(ProfilActivity.this, ConnexionActivity.class);
                 startActivity(intent);
             }

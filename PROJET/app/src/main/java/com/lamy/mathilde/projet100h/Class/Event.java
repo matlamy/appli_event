@@ -2,9 +2,7 @@ package com.lamy.mathilde.projet100h.Class;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
-import java.sql.Time;
 import java.sql.Timestamp;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +15,7 @@ public class Event {
 
     /* attributs de la classe Event */
     private int idEvent ;
-    private Timestamp dateStart ;
+    private long dateStart ;
     private Timestamp dateEnd ;
     private int prix ;
     private int nbParticip ;
@@ -26,10 +24,12 @@ public class Event {
     private double longitude ;
     private boolean visible ;
     private boolean prive ;
+    private String createur ;
+
 
     /* getter() et setter() de chaque attribut de la classe Event */
-    public Timestamp getDateStart() {return dateStart;}
-    public void setDateStart(Timestamp dateStart) {this.dateStart = dateStart;}
+    public long getDateStart() {return dateStart;}
+    public void setDateStart(long dateStart) {this.dateStart = dateStart;}
 
     public Timestamp getDateEnd() {return dateEnd;}
     public void setDateEnd(Timestamp dateEnd) {this.dateEnd = dateEnd;}
@@ -59,8 +59,11 @@ public class Event {
 
     public void setVisible(boolean visible) {this.visible = visible;}
 
+    public String getCreateur() {return createur;}
+    public void setCreateur(String createur) {this.createur = createur;}
+
     /* constructeur de la classe Event */
-    public Event(int idEvent,Timestamp dateStart,Timestamp dateEnd,int prix,int nbParticip,String nameEvent,double latitude,double longitude,boolean prive,boolean visible) {
+    public Event(int idEvent,long dateStart,Timestamp dateEnd,int prix,int nbParticip,String nameEvent,double latitude,double longitude,boolean prive,boolean visible,String createur) {
         this.idEvent=idEvent;
         this.dateEnd=dateEnd;
         this.dateStart=dateStart;
@@ -71,7 +74,10 @@ public class Event {
         this.longitude=longitude;
         this.prive=prive;
         this.visible=visible;
+        this.createur=createur;
     }
+
+    public Event() {}
 
     @Override
     public String toString() {

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lamy.mathilde.projet100h.Activity.DetailsEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNameEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'événement"
+            android:textAlignment="center"
+            android:margin="15dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date de l'événement"
+            android:textAlignment="center"
+            android:margin="15dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewHeure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horaires de l'événement"
+            android:textAlignment="center"
+            android:margin="15dp"
+            android:layout_marginBottom="140dp"
+            android:textSize="18sp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/buttonParticiper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Je participe" />
+
+        <Button
+            android:id="@+id/buttonRetour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Retour" />
+
+    </LinearLayout>
+</RelativeLayout>
