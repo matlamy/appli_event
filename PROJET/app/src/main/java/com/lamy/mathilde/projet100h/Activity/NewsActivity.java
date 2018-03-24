@@ -10,6 +10,10 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
 import com.lamy.mathilde.projet100h.Adapter.ListViewAdapter;
 import com.lamy.mathilde.projet100h.Class.Event;
 import com.lamy.mathilde.projet100h.R;
@@ -47,5 +51,41 @@ public class NewsActivity extends AppCompatActivity {
 
 }
 });
+        prepareEventsDatas();
+
+    }
+
+    /**
+     * Méthode qui va récupérer les données des événements enregistrés sur la base de données Firebase
+     */
+    private void prepareEventsDatas(){
+
+        FirebaseDatabase.getInstance().getReference().child("events").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                // Etape 1 : On récupère les données sous forme d'objet Event
+                Event event = dataSnapshot.getValue(Event.class);
+                // Etape 2 : Ici, pour faire la distinction entre les événements passés et ceux à venir,
+                //              on teste la valeur Timestamp de l'événement par rapport à la valeur
+                //              Timestamp actuelle du système.
+
+                    upcomingEventList.add(event); // On ajoute l'événement dans la liste des événements à venir...
+                  //  upcomingEventsAdapter.notifyDataSetChanged(); // ... puis on notifie à l'adaptateur les changements
+                }
+
+
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) { }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) { }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) { }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) { }
+        });
     }
 }
