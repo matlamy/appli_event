@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lamy.mathilde.projet100h.MainActivity">
+    tools:context="com.lamy.mathilde.projet100h.Activity.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"

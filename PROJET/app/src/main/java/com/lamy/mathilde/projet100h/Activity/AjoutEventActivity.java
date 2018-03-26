@@ -191,6 +191,8 @@ public class AjoutEventActivity extends AppCompatActivity implements DatePickerD
                 new TimePickerDialog(AjoutEventActivity.this, AjoutEventActivity.this, mHour, mMinute, true).show();
             }
         });
+
+
     }
 
 }

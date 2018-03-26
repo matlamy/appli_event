@@ -1,5 +1,7 @@
 package com.lamy.mathilde.projet100h.Class;
 
+import android.widget.EditText;
+
 /**
  * Created by Mathilde on 21/03/2018.
  */
@@ -22,9 +24,17 @@ public class User {
     public void setAdmin(boolean admin) {this.admin = admin;}
 
     /*constructeur de la classe User */
+    public User(EditText userName, EditText userMail){
+
+    }
     public User(String mail,String password,boolean admin) {
         this.mail=mail;
         this.password=password;
         this.admin=admin;
+
     }
+    public User(){
+        // Utile pr Firebase même si non utilisé
+    }
+
 }

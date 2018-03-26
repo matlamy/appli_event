@@ -2,6 +2,7 @@ package com.lamy.mathilde.projet100h.Class;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,7 @@ import java.util.Map;
  */
 
 @IgnoreExtraProperties
-public class Event {
+public class Event implements Serializable {
 
 
     /* attributs de la classe Event */
@@ -89,6 +90,9 @@ public class Event {
                 ", dateEnd=" + dateEnd +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
+                ", createur=" + createur +
+                ", prix=" + prix +
+                ", nbparticipant=" + nbParticip +
                 '}';
     }
 
@@ -101,6 +105,10 @@ public class Event {
         result.put("dateEnd", dateEnd);
         result.put("latitude", latitude);
         result.put("longitude", longitude);
+        result.put("createur", createur);
+        result.put("prix", prix);
+        result.put("nbparticipant", nbParticip);
+
 
         return result;
 

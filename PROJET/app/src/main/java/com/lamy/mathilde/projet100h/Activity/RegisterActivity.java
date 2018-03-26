@@ -12,14 +12,19 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
+import com.google.firebase.database.DatabaseReference;
+import com.lamy.mathilde.projet100h.Class.User;
 import com.lamy.mathilde.projet100h.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
     protected EditText userName, userMail, userPassword;
     protected Button register;
+    private FirebaseAuth auth;
+    private DatabaseReference mdatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +84,13 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+    private void createNewUser(FirebaseUser userFromRegistration) {
+        String username = userName.getText().toString().trim();
+        String email = userFromRegistration.getEmail();
+        String userId = userFromRegistration.getUid();
 
+        User user = new User(userName, userMail);
 
+        mdatabase.child("users").child(userId).setValue(user);
+    }
 }

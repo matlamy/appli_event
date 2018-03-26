@@ -16,8 +16,8 @@ public class MenuActivity extends AppCompatActivity {
     private Button btnCalendrier;
     private Button btnNews;
     private Button btnProfil;
-    private String[] drawerItemsList;
-    private ListView myDrawer;
+    protected Button addEvent;
+
 
 
 
@@ -36,6 +36,17 @@ public class MenuActivity extends AppCompatActivity {
         btnCalendrier = (Button) findViewById(R.id.buttonCalendrier) ;
         btnNews = (Button) findViewById(R.id.buttonNews);
         btnProfil = (Button) findViewById(R.id.buttonProfil) ;
+        addEvent = (Button) findViewById(R.id.add_event) ;
+
+
+
+        addEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuActivity.this, AjoutEventActivity.class));
+                }
+            });
+
 
         btnPlan.setOnClickListener(new View.OnClickListener() {
             @Override
