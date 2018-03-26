@@ -15,6 +15,7 @@ import java.util.Map;
 @IgnoreExtraProperties
 public class Event {
 
+
     /* attributs de la classe Event */
     private int idEvent ;
     private Timestamp dateStart ;
