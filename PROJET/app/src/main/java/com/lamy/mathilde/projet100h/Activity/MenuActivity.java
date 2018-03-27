@@ -9,6 +9,7 @@ import android.widget.Toast;
 import android.content.Intent;
 
 
+import com.lamy.mathilde.projet100h.MainActivity;
 import com.lamy.mathilde.projet100h.R;
 
 public class MenuActivity extends AppCompatActivity {
@@ -43,7 +44,7 @@ public class MenuActivity extends AppCompatActivity {
         addEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MenuActivity.this, AjoutEventActivity.class));
+                startActivity(new Intent(MenuActivity.this, MainActivity.class));
                 }
             });
 
