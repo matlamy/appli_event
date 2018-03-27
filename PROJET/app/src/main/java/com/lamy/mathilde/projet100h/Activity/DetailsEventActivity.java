@@ -82,7 +82,7 @@ public class DetailsEventActivity extends AppCompatActivity implements OnMapRead
      */
     private void initializeTextViews(){
         // Etape 1 : On récupère la référence des vues via la classe R
-        eventName = (TextView)findViewById(R.id.textViewNameEvent);
+        eventName = (TextView)findViewById(R.id.textViewEventName);
         creaName = (TextView)findViewById(R.id.textViewOrga);
         eventDate = (TextView)findViewById(R.id.textViewDate);
 
