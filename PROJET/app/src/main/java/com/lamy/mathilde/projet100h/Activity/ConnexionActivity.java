@@ -22,7 +22,7 @@ public class ConnexionActivity extends AppCompatActivity {
     private EditText edtPassword;
     private Button btnConnexion;
     private FirebaseAuth auth;
-    private Button btnRegister;
+    private Button btnSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +32,16 @@ public class ConnexionActivity extends AppCompatActivity {
         edtMail = (EditText) findViewById(R.id.editTextMail);
         edtPassword = (EditText) findViewById(R.id.editTextPassword);
         btnConnexion = (Button) findViewById(R.id.buttonConnexion);
-        btnRegister = (Button) findViewById(R.id.create_account);
+        btnSignUp= (Button) findViewById(R.id.create_account);
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ConnexionActivity.this,RegisterActivity.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                startActivity(new Intent(ConnexionActivity.this, RegisterActivity.class));
             }
         });
 

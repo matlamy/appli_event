@@ -54,6 +54,8 @@
         <activity android:name=".Activity.ProfilActivity" />
         <activity android:name=".Activity.AjoutEventActivity" />
         <activity android:name=".Activity.DetailsEventActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+
     </application>
 
 </manifest>
