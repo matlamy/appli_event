@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#3E45BD"
     android:layout_height="match_parent"
     tools:context="com.lamy.mathilde.projet100h.Activity.ConnexionActivity">
+
 
     <ImageView
         android:layout_width="170dp"
@@ -25,6 +27,8 @@
         android:ems="10"
         android:hint="Mail étudiant"
         android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:visibility="visible"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="156dp" />
@@ -34,9 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="122dp"
         android:text="Se connecter"
+        android:textColor="@android:color/white"
         android:visibility="visible"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="392dp" />
@@ -48,6 +54,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="202dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPassword" />
@@ -59,6 +67,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
+        android:textColor="@android:color/white"
         android:clickable="true"
         android:gravity="center"
         android:text="Créer un compte ?"
