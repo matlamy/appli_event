@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context="com.lamy.mathilde.projet100h.Activity.ConnexionActivity">
 
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="196dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/logo" />
+
     <EditText
         android:id="@+id/editTextMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextPassword"
-        android:layout_alignStart="@+id/editTextPassword"
-        android:layout_marginBottom="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="243dp"
         android:ems="10"
         android:hint="Mail étudiant"
         android:inputType="textPersonName"
@@ -24,21 +33,21 @@
         android:id="@+id/buttonConnexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
         android:text="Se connecter"
         android:visibility="visible"
         tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="392dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="143dp" />
+        tools:layout_editor_absoluteY="392dp" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonConnexion"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="202dp"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPassword" />
