@@ -30,6 +30,7 @@
             android:layout_toEndOf="@+id/imageButton"
             android:layout_weight="1"
             android:text="CALENDRIER"
+            android:textColor="#3E45BD"
             android:textSize="50sp" />
     </LinearLayout>
 

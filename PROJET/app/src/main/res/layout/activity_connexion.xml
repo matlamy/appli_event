@@ -35,14 +35,16 @@
 
     <Button
         android:id="@+id/buttonConnexion"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
         android:layout_centerHorizontal="true"
+
+
         android:layout_marginBottom="122dp"
+        android:background="@color/white"
         android:text="Se connecter"
-        android:textColor="@android:color/white"
+        android:textColor="#3E45BD"
         android:visibility="visible"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="392dp" />
@@ -62,15 +64,16 @@
 
     <Button
         android:id="@+id/create_account"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
-        android:textColor="@android:color/white"
+        android:background="@android:color/white"
         android:clickable="true"
         android:gravity="center"
         android:text="Créer un compte ?"
+        android:textColor="#3E45BD"
         android:textSize="16sp" />
 
 

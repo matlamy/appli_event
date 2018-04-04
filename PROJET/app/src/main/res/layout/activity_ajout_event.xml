@@ -14,6 +14,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_margin="10dp"
+            android:textColor="#3E45BD"
             android:text="Nom de l'événement :"/>
         <EditText
             android:id="@+id/event_name"
@@ -23,11 +24,13 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:textSize="16sp"
+            android:textColorHint="#3E45BD"
             android:hint="Saisir le nom"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textColor="#3E45BD"
             android:layout_margin="10dp"
             android:text="Lieu de l'événement :"/>
 
@@ -42,12 +45,14 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_margin="10dp"
+            android:textColor="#3E45BD"
             android:text="Date de l'événement :"/>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
+            android:textColor="#3E45BD"
             android:weightSum="2">
             <TextView
                 android:id="@+id/event_date_preview"
@@ -56,9 +61,11 @@
                 android:gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_weight="0.3"
+                android:textColor="#3E45BD"
                 android:text="Pas de date sélectionnée"/>
             <ImageButton
                 android:id="@+id/event_date_button"
+                android:textColor="#3E45BD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_menu_edit"
@@ -68,12 +75,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textColor="#3E45BD"
             android:layout_margin="10dp"
             android:text="Heure de l'événement :"/>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="#3E45BD"
             android:layout_margin="10dp"
             android:weightSum="2">
             <TextView
@@ -82,11 +91,13 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:textSize="16sp"
+                android:textColor="#3E45BD"
                 android:layout_weight="0.3"
                 android:text="Pas d'heure sélectionnée"/>
             <ImageButton
                 android:id="@+id/event_time_button"
                 android:layout_width="match_parent"
+                android:textColor="#3E45BD"
                 android:layout_height="match_parent"
                 android:src="@android:drawable/ic_menu_edit"
                 android:layout_weight="1.7"/>
@@ -97,6 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.3"
+            android:textColor="#3E45BD"
             android:orientation="horizontal">
 
             <TextView
@@ -104,6 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
+                android:textColor="#3E45BD"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:text="Nombre de participants :" />
@@ -113,6 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:textColor="#3E45BD"
                 android:layout_weight="0.5" />
         </LinearLayout>
 
@@ -121,6 +135,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:background="#3E45BD"
+            android:textColor="@color/white"
             android:layout_marginRight="15dp"
             android:text="Enregistrer l'événement"
             android:textAllCaps="false" />

@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:text="Votre nom d'utilisateur"
         android:layout_margin="15dp"
+        android:textColor="#3E45BD"
         android:textStyle="bold"
         android:textSize="20sp"/>
 
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:hint="Saisir votre nom"
+        android:textColorHint="#3E45BD"
         android:layout_margin="15dp"
         android:textSize="16sp"/>
 
@@ -28,6 +30,7 @@
         android:text="Votre adresse mail"
         android:layout_margin="15dp"
         android:textStyle="bold"
+        android:textColor="#3E45BD"
         android:textSize="20sp"/>
 
     <EditText
@@ -37,6 +40,7 @@
         android:inputType="textEmailAddress"
         android:hint="Saisir votre adresse mail"
         android:layout_margin="15dp"
+        android:textColorHint="#3E45BD"
         android:textSize="16sp"/>
 
     <TextView
@@ -45,6 +49,7 @@
         android:text="Votre mot de passe"
         android:layout_margin="15dp"
         android:textStyle="bold"
+        android:textColor="#3E45BD"
         android:textSize="20sp"/>
 
     <EditText
@@ -52,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:textColorHint="#3E45BD"
         android:hint="Saisir votre mot de passe"
         android:layout_margin="15dp"
         android:textSize="16sp"/>
@@ -62,6 +68,8 @@
         android:layout_height="wrap_content"
         android:text="S'enregistrer"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="#3E45BD"
         android:layout_margin="15dp"
         android:textSize="20sp"/>
 

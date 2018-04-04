@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
+            android:textColor="#3E45BD"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="5dp"
             android:weightSum="2">
@@ -22,6 +23,7 @@
                 android:layout_height="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="1.5"
+                android:textColor="#3E45BD"
                 android:textStyle="bold"
                 android:text="Nom :"/>
 
@@ -29,6 +31,7 @@
                 android:id="@+id/textViewEventName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:textColor="#3E45BD"
                 android:layout_weight="0.5"
                 android:textSize="16sp" />
 
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
+            android:textColor="#3E45BD"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="5dp"
             android:weightSum="2">
@@ -49,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#3E45BD"
                 android:layout_weight="1.5"
                 android:text="De : "/>
 
@@ -57,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
+                android:textColor="#3E45BD"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -66,6 +72,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
+            android:textColor="#3E45BD"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="5dp"
             android:weightSum="2">
@@ -75,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#3E45BD"
                 android:layout_weight="1.5"
                 android:text="Date :"/>
 
@@ -82,6 +90,7 @@
                 android:id="@+id/textViewDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#3E45BD"
                 android:layout_weight="0.5"
                 android:textSize="16sp" />
 
@@ -92,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="15dp"
+            android:textColor="#3E45BD"
             android:id="@+id/map"
             tools:context=".DetailsEventActivity"
             android:name="com.google.android.gms.maps.SupportMapFragment" />
@@ -101,6 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:textColor="#3E45BD"
             android:layout_marginBottom="5dp"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -110,11 +121,13 @@
             android:id="@+id/participant_list"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:textColor="#3E45BD"
             android:layout_margin="15dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:textColor="#3E45BD"
             android:orientation="horizontal">
 
             <Button
@@ -126,6 +139,8 @@
                 android:text="Je participe"
                 android:textAllCaps="false"
                 android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="#3E45BD"
                 android:textSize="16sp"/>
 
             <Button
@@ -135,6 +150,8 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="5dp"
                 android:text="Je ne participe pas"
+                android:textColor="@color/white"
+                android:background="#3E45BD"
                 android:layout_weight="1"
                 android:textAllCaps="false"
                 android:textSize="16sp"/>
