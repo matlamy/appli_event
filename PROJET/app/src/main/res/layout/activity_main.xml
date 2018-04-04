@@ -16,7 +16,7 @@
             android:id="@+id/add_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ajouter un événement"
+            android:text="@string/ajouter_un_v_nement"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:layout_marginRight="15dp"

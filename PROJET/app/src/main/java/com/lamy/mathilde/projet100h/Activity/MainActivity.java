@@ -1,4 +1,4 @@
-package com.lamy.mathilde.projet100h;
+package com.lamy.mathilde.projet100h.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.lamy.mathilde.projet100h.Activity.AjoutEventActivity;
-import com.lamy.mathilde.projet100h.Activity.ConnexionActivity;
-import com.lamy.mathilde.projet100h.Activity.RegisterActivity;
+import com.lamy.mathilde.projet100h.R;
 
 public class MainActivity extends AppCompatActivity {
 
