@@ -9,11 +9,15 @@ import android.widget.EditText;
 public class User {
 
     /* attributs de la classe user */
+    private String UserName;
     private String mail ;
     private String password ;
     private boolean admin ;
 
     /* getter() et setter() de la classe User */
+    public String getUserName() {return UserName;}
+    public void setUserName(String UserName) {this.UserName = UserName;}
+
     public String getMail() {return mail;}
     public void setMail(String mail) {this.mail = mail;}
 
@@ -27,7 +31,8 @@ public class User {
     public User(EditText userName, EditText userMail){
 
     }
-    public User(String mail,String password,boolean admin) {
+    public User(String UserName, String mail,String password,boolean admin) {
+        this.UserName=UserName;
         this.mail=mail;
         this.password=password;
         this.admin=admin;

@@ -9,6 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <TextView
@@ -16,44 +18,33 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:text="MENU"
-            android:textColor="#3E45BD"
             android:textAlignment="center"
+            android:textColor="#3E45BD"
             android:textSize="70sp" />
 
         <Button
             android:id="@+id/add_event"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:background="#3E45BD"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/add_event"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="140dp"
+            android:background="#3E45BD"
             android:text="Event"
             android:textColor="@color/white"
             tools:layout_editor_absoluteX="216dp"
             tools:layout_editor_absoluteY="308dp" />
 
         <Button
-            android:id="@+id/buttonNews"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/buttonPlan"
-            android:background="#3E45BD"
-            android:layout_marginTop="40dp"
-            android:text="News"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="216dp"
-            tools:layout_editor_absoluteY="308dp" />
-
-        <Button
             android:id="@+id/buttonPlan"
-            android:background="#3E45BD"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
+            android:background="#3E45BD"
             android:text="Plan"
             android:textColor="@color/white"
             tools:layout_editor_absoluteX="216dp"
@@ -61,24 +52,26 @@
 
         <Button
             android:id="@+id/buttonCalendrier"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/buttonNews"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:background="#3E45BD"
             android:text="Calendrier"
             android:textColor="@color/white"
-            android:background="#3E45BD"
             tools:layout_editor_absoluteX="61dp"
             tools:layout_editor_absoluteY="231dp" />
 
         <Button
             android:id="@+id/buttonProfil"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/buttonProfil"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:background="#3E45BD"
             android:text="Profil"
             android:textColor="@color/white"
