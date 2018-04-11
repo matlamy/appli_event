@@ -4,12 +4,12 @@
     android:layout_height="match_parent">
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/map"
-    tools:context=".Activity.MapsActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment" />
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:layout_toRightOf="@+id/ic_magnify"
             android:layout_centerVertical="true"
             android:textSize="15sp"
-            android:textColor="#3E45BD"
+            android:textColor="#000"
             android:id="@+id/input_search"
             android:background="@null"
             android:hint="Enter Address, City or Zip Code"
@@ -55,13 +55,22 @@
         android:id="@+id/ic_gps"
         android:src="@drawable/ic_gps"/>
 
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/place_picker"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/relLayout1"
+        android:src="@drawable/ic_map"/>
 
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_below="@+id/ic_gps"
+        android:layout_below="@+id/place_picker"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="15dp"
         android:scaleType="centerCrop"
         android:id="@+id/place_info"
         android:src="@drawable/ic_info"/>

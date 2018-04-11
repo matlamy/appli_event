@@ -15,7 +15,7 @@ import com.lamy.mathilde.projet100h.R;
 public class MenuActivity extends AppCompatActivity {
     private Button btnPlan;
     private Button btnCalendrier;
-    private Button btnNews;
+
     private Button btnProfil;
     protected Button addEvent;
 
@@ -35,7 +35,7 @@ public class MenuActivity extends AppCompatActivity {
 
         btnPlan = (Button) findViewById(R.id.buttonPlan)  ;
         btnCalendrier = (Button) findViewById(R.id.buttonCalendrier) ;
-        btnNews = (Button) findViewById(R.id.buttonNews);
+
         btnProfil = (Button) findViewById(R.id.buttonProfil) ;
         addEvent = (Button) findViewById(R.id.add_event) ;
 
@@ -65,13 +65,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        btnNews.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this,NewsActivity.class);
-                startActivity(intent);
-            }
-        });
 
         btnProfil.setOnClickListener(new View.OnClickListener() {
             @Override
