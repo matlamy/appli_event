@@ -90,23 +90,12 @@
         android:textSize="40sp" />
 
     <Button
-        android:id="@+id/buttonEventPasse"
-        android:layout_width="209dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonDeconnexion"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
-        android:background="#3E45BD"
-        android:text="Mes événements passés >"
-        android:textColor="@color/white" />
-
-    <Button
         android:id="@+id/buttonDeconnexion"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="99dp"
         android:background="#3E45BD"
         android:text="Déconnexion"
         android:textColor="@color/white" />

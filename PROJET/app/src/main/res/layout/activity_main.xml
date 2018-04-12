@@ -16,13 +16,14 @@
             android:id="@+id/add_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ajouter un événement"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:background="#3E45BD"
-            android:textAllCaps="false"
+            android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"/>
+            android:background="#3E45BD"
+            android:text="Ajouter un événement"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -30,7 +31,7 @@
             android:textSize="20sp"
             android:layout_margin="15dp"
             android:textColor="#3E45BD"
-            android:text="Liste des événements :" />
+            android:text="Listes des événements :" />
 
         <TextView
             android:layout_width="match_parent"

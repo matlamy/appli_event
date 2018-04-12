@@ -43,12 +43,12 @@
             android:layout_margin="10dp"
             android:hint="Lieu de l'événement :"/>
 
-        <!--<fragment
+        <fragment
             android:id="@+id/place_autocomplete_fragment"
             android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp" />-->
+            android:layout_margin="10dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

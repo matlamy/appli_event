@@ -7,6 +7,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="INSCRIPTION"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="#3E45BD"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Votre nom d'utilisateur"
         android:layout_margin="15dp"
         android:textColor="#3E45BD"
@@ -66,7 +77,7 @@
         android:id="@+id/button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="S'enregistrer"
+        android:text="S'inscrire"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:background="#3E45BD"
