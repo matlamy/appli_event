@@ -10,11 +10,12 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewPageAccueil"
+        android:layout_below="@+id/textViewProfil"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="27dp"
         android:textColor="#3E45BD"
-        app:srcCompat="@android:drawable/picture_frame"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/imageButtonMenu"
-        android:layout_toEndOf="@+id/imageButtonMenu" />
+        app:srcCompat="@android:drawable/picture_frame" />
 
     <TextView
         android:id="@+id/textViewNomPrenom"
@@ -59,15 +60,6 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="15dp"
         app:srcCompat="@android:drawable/ic_menu_edit" />
-
-    <ImageButton
-        android:id="@+id/imageButtonMenu"
-        android:layout_width="wrap_content"
-        android:textColor="#3E45BD"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
     <TextView
         android:id="@+id/textViewGeoloc"

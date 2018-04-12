@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -15,8 +16,9 @@ public class ProfilActivity extends AppCompatActivity {
 
     private Button btnDeconnexion ;
     private ImageButton btnModif ;
-    private ImageButton btnMenu ;
     private ToggleButton btnActivGeoloc ;
+    private TextView textViewEcole ;
+    private TextView textViewNom ;
 
 
     @Override
@@ -25,11 +27,23 @@ public class ProfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profil);
 
         //btnOldEvents = (Button) findViewById(R.id.buttonEventPasse) ;
-        btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
         btnModif = (ImageButton) findViewById(R.id.imageButtonModify);
         btnActivGeoloc = (ToggleButton) findViewById(R.id.buttonOnOffGeo);
         btnDeconnexion = (Button) findViewById(R.id.buttonDeconnexion);
+        textViewEcole = (TextView) findViewById(R.id.textViewEcole) ;
+        textViewNom = (TextView) findViewById(R.id.textViewNomPrenom) ;
 
+
+        textViewNom.setText("ok");
+
+
+        btnModif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfilActivity.this,ModifyProfilActivity.class) ;
+
+            }
+        });
 
 
         btnDeconnexion.setOnClickListener(new View.OnClickListener() {

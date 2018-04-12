@@ -1,4 +1,4 @@
-package com.lamy.mathilde.projet100h.Activity;
+package com.lamy.mathilde.projet100h.Adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;

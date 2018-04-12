@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lamy.mathilde.projet100h.Activity.ProfilActivity">
+
+    <TextView
+        android:id="@+id/textViewProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="MODIFICATION DU PROFIL"
+        android:textColor="#3E45BD"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/edtNomPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonSave"
+        android:layout_below="@+id/textViewProfil"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="NOM Prénom"
+        android:textColor="#3E45BD"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtEcole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtNomPrenom"
+        android:layout_below="@+id/edtNomPrenom"
+        android:layout_marginTop="26dp"
+        android:text="Ecole"
+        android:textColor="#3E45BD"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textViewPageAccueil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewProfil"
+        android:layout_below="@+id/edtEcole"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        android:text="Ma page d'accueil :"
+        android:textColor="#3E45BD"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewPageAccueil"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_toEndOf="@+id/buttonSave" />
+
+
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:background="#3E45BD"
+        android:text="Enregistrer"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
