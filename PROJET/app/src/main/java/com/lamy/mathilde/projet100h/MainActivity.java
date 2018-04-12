@@ -2,6 +2,7 @@ package com.lamy.mathilde.projet100h;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.location.Location;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected ListViewAdapter upcomingEventsAdapter, pastEventsAdapter;
     protected ArrayList<Event> upcomingEventList = new ArrayList<>();
     protected ArrayList<Event> pastEventList = new ArrayList<>();
+    protected Location mLastLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

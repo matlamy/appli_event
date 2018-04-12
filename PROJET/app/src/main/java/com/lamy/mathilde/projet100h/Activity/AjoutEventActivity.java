@@ -76,7 +76,6 @@ public class AjoutEventActivity extends AppCompatActivity implements DatePickerD
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajout_event);
 
-
         savedCalendar = Calendar.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference().child("events");
 
