@@ -48,6 +48,23 @@
             android:layout_marginBottom="5dp"
             android:weightSum="2">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3E45BD"
+                android:layout_weight="1.5"
+                android:text="De : "/>
+
+            <TextView
+                android:id="@+id/textViewOrga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#3E45BD"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
         <LinearLayout

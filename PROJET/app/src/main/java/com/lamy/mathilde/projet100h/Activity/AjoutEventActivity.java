@@ -132,6 +132,7 @@ public class AjoutEventActivity extends AppCompatActivity implements DatePickerD
                 // Etape 1 : On récupère le reste des valeurs à attribuer à l'événement.
                 //      Les valeurs de latitude et de longitude sont directement attribuées
                 //      via la Listener de l'AutoCompleteFragment.
+
                 eventToSave.setNameEvent(eventName.getText().toString());
                 eventToSave.setCreateur(FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
                 eventToSave.setDateStart(savedCalendar.getTimeInMillis() / 1000L);
