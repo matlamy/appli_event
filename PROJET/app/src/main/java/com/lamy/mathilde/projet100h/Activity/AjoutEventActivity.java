@@ -122,14 +122,14 @@ public class AjoutEventActivity extends AppCompatActivity implements DatePickerD
 
 
     /**
-     * Méthode d'initialisation des boutons
+     * Méthode permettant d'initialiser les boutons
      */
     private void initializeButtons() {
         addEvent = (Button) findViewById(R.id.button_validate);
         addEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Etape 1 : On récupère le reste des valeurs à attribuer à l'événement.
+                // Etape 1 : récupèration du reste des valeurs à attribuer à l'événement.
                 //      Les valeurs de latitude et de longitude sont directement attribuées
                 //      via la Listener de l'AutoCompleteFragment.
 
@@ -161,7 +161,7 @@ public class AjoutEventActivity extends AppCompatActivity implements DatePickerD
      * Méthode d'initialisation du fragment d'auto-complétion d'adresse
      */
     private void initializeAutoCompleteFragment() {
-        //Etape 1 : On récupère la référence du fragment AutoCOmplete.
+        //Etape 1 : On récupère la référence du fragment AutoComplete.
         autocompleteFragment = (PlaceAutocompleteFragment) getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
         // Etape 2 : On lui attribue un Listener pour récupérer la latitude et la longitude d'un lieu renseigné.
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {

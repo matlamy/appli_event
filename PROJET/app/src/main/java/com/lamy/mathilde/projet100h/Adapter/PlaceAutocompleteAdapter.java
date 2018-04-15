@@ -31,22 +31,22 @@ public class PlaceAutocompleteAdapter extends ArrayAdapter<AutocompletePredictio
     private static final String TAG = "PlaceAutoCompleteAd";
     private static final CharacterStyle STYLE_BOLD = new StyleSpan(Typeface.BOLD);
     /**
-     * Current results returned by this adapter.
+     * resultats retourné par cette adapter
      */
     private ArrayList<AutocompletePrediction> mResultList;
 
     /**
-     * Handles autocomplete requests.
+     * Api google
      */
     private GoogleApiClient mGoogleApiClient;
 
     /**
-     * The bounds used for Places Geo Data autocomplete API requests.
+     * lat et long
      */
     private LatLngBounds mBounds;
 
     /**
-     * The autocomplete filter used to restrict queries to a specific set of place types.
+     * le autocomplete filtre que l'on a besoin.
      */
     private AutocompleteFilter mPlaceFilter;
 
@@ -64,14 +64,14 @@ public class PlaceAutocompleteAdapter extends ArrayAdapter<AutocompletePredictio
     }
 
     /**
-     * Sets the bounds for all subsequent queries.
+     * le bounds dispo
      */
     public void setBounds(LatLngBounds bounds) {
         mBounds = bounds;
     }
 
     /**
-     * Returns the number of results received in the last autocomplete query.
+     * le nombre de resultats données par l'autocompletation
      */
     @Override
     public int getCount() {
@@ -79,7 +79,7 @@ public class PlaceAutocompleteAdapter extends ArrayAdapter<AutocompletePredictio
     }
 
     /**
-     * Returns an item from the last autocomplete query.
+     * retourne la valeur
      */
     @Override
     public AutocompletePrediction getItem(int position) {
@@ -105,7 +105,7 @@ public class PlaceAutocompleteAdapter extends ArrayAdapter<AutocompletePredictio
     }
 
     /**
-     * Returns the filter for the current set of autocomplete results.
+     * retourne le filtre
      */
     @Override
     public Filter getFilter() {
