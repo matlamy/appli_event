@@ -33,13 +33,11 @@ public class ProfilActivity extends AppCompatActivity {
 
 
         // Mise à jour du nom de l'utilisateur
-        Bundle bundleNom = getIntent().getExtras();
-        String nom = bundleNom.getString("nom");
+        Bundle bundle = getIntent().getExtras();
+        String nom = bundle.getString("nom");
         textViewNom.setText(nom);
 
-        // Mise à jour de l'école par l'utilisateur
-        Bundle bundleEcole = getIntent().getExtras();
-        String ecole = bundleEcole.getString("ecole");
+        String ecole = bundle.getString("ecole");
         textViewEcole.setText(ecole);
 
 

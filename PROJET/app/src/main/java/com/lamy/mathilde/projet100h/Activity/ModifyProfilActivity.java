@@ -30,8 +30,7 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
         setContentView(R.layout.activity_modify_profil);
 
         // Saisie du nom d'utilisateur et de l'école + envoie à l'activité profil
-            Intent ecole = new Intent(this, ProfilActivity.class) ;
-            Intent nom = new Intent(this, ProfilActivity.class) ;
+            Intent intent = new Intent(this, ProfilActivity.class) ;
             autoCompleteEcole = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewEcole);
             autoCompleteNom = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewNom);
 
@@ -40,19 +39,17 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
             getEcole =autoCompleteEcole.getText().toString();
 
             // création des bundle pour associer une valeur à une clé
-            Bundle bundleNom = new Bundle();
-            Bundle bundleEcole = new Bundle();
+            Bundle bundle = new Bundle();
 
             // association de la clé à la valeur souhaitée
-            bundleNom.putString("nom", getNom);
-            bundleEcole.putString("ecole", getEcole);
+            bundle.putString("nom", getNom);
+            bundle.putString("ecole", getEcole);
 
-            nom.putExtras(bundleNom);
-            ecole.putExtras(bundleEcole);
+            intent.putExtras(bundle);
+            intent.putExtras(bundle);
 
             // envoie des valeurs saisies à l'activité profil
-            startActivity(nom);
-            startActivity(ecole);
+            startActivity(intent);
 
 
             // redirection vers l'activité profil une fois les modificatiosn terminées
