@@ -13,12 +13,16 @@ import android.widget.ToggleButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.lamy.mathilde.projet100h.R;
 
+import org.w3c.dom.Text;
+
 public class ProfilActivity extends AppCompatActivity {
 
     private Button btnDeconnexion ;
     private ImageButton btnModif ;
     private TextView textViewEcole ;
     private TextView textViewNom ;
+    private TextView tVNomPrenom ;
+    private TextView tVEcole ;
     private int i = 0 ;
 
 
@@ -31,6 +35,8 @@ public class ProfilActivity extends AppCompatActivity {
         btnDeconnexion = (Button) findViewById(R.id.buttonDeconnexion);
         textViewEcole = (TextView) findViewById(R.id.textViewEcole) ;
         textViewNom = (TextView) findViewById(R.id.textViewNomPrenom) ;
+        tVEcole = (TextView) findViewById(R.id.tVEcole) ;
+        tVNomPrenom = (TextView) findViewById(R.id.tVNomPrenom) ;
 
 
         if (i!=0) {
@@ -40,7 +46,13 @@ public class ProfilActivity extends AppCompatActivity {
             String ecole = bundle.getString("ecole");
 
             textViewEcole.setText(ecole);
+            textViewEcole.setVisibility(View.VISIBLE);
+            tVEcole.setVisibility(View.INVISIBLE);
+
             textViewNom.setText(nom);
+            textViewNom.setVisibility(View.VISIBLE);
+            tVNomPrenom.setVisibility(View.INVISIBLE);
+
 
         }
 
