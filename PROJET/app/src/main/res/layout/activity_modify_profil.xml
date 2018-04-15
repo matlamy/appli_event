@@ -18,28 +18,31 @@
         android:textSize="30sp" />
 
 
-    <EditText
-        android:id="@+id/edtNomPrenom"
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/buttonSave"
         android:layout_below="@+id/textViewProfil"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="23dp"
         android:layout_weight="1"
         android:text="NOM Prénom"
         android:textColor="#3E45BD"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/edtEcole"
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewEcole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/edtNomPrenom"
-        android:layout_below="@+id/edtNomPrenom"
+        android:layout_marginStart="39dp"
+        android:layout_alignStart="@+id/autoCompleteTextViewNom"
+        android:layout_below="@+id/autoCompleteTextViewNom"
         android:layout_marginTop="26dp"
         android:text="Ecole"
         android:textColor="#3E45BD"
-        android:textSize="20sp" />
+        android:textSize="20sp"/>
+
+
 
 
     <TextView
@@ -47,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textViewProfil"
-        android:layout_below="@+id/edtEcole"
+        android:layout_below="@+id/autoCompleteTextViewEcole"
         android:layout_marginStart="29dp"
         android:layout_marginTop="40dp"
         android:text="Ma page d'accueil :"

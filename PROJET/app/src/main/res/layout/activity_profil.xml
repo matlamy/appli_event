@@ -92,17 +92,6 @@
         android:text="Déconnexion"
         android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/textViewPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Plan"
-        android:textSize="20sp"
-        android:textColor="#3E45BD"
-        android:layout_alignBaseline="@+id/textViewPageAccueil"
-        android:layout_alignBottom="@+id/textViewPageAccueil"
-        android:layout_alignEnd="@+id/buttonDeconnexion" />
-
     <ToggleButton
         android:id="@+id/buttonOnOffGeo"
         android:layout_width="wrap_content"
