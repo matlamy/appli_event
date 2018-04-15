@@ -42,4 +42,14 @@ public class User {
         // Utile pr Firebase même si non utilisé
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + UserName + '\'' +
+                ", mail='" + mail + '\'' +
+                ", password=" + password +
+                ", Admin=" + admin +
+                '}';
+
+}
 }
