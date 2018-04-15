@@ -131,6 +131,7 @@
             android:orientation="horizontal">
 
             <Button
+
                 android:id="@+id/buttonParticiper"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -140,7 +141,7 @@
                 android:textAllCaps="false"
                 android:layout_weight="1"
                 android:textColor="@color/white"
-                android:background="#3E45BD"
+                android:background="#1B5583"
                 android:textSize="16sp"/>
 
             <Button
@@ -151,7 +152,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="Je ne participe pas"
                 android:textColor="@color/white"
-                android:background="#3E45BD"
+                android:background="#1B5583"
                 android:layout_weight="1"
                 android:textAllCaps="false"
                 android:textSize="16sp"/>
