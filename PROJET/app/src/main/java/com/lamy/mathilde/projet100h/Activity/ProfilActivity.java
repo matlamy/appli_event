@@ -19,6 +19,7 @@ public class ProfilActivity extends AppCompatActivity {
     private ImageButton btnModif ;
     private TextView textViewEcole ;
     private TextView textViewNom ;
+    private int i = 0 ;
 
 
     @Override
@@ -32,13 +33,16 @@ public class ProfilActivity extends AppCompatActivity {
         textViewNom = (TextView) findViewById(R.id.textViewNomPrenom) ;
 
 
-        // Mise à jour du nom de l'utilisateur
-        Bundle bundle = getIntent().getExtras();
-        String nom = bundle.getString("nom");
-        textViewNom.setText(nom);
+        if (i!=0) {
+            // Mise à jour du nom et l'école de l'utilisateur
+            Bundle bundle = getIntent().getExtras();
+            String nom = bundle.getString("nom");
+            String ecole = bundle.getString("ecole");
 
-        String ecole = bundle.getString("ecole");
-        textViewEcole.setText(ecole);
+            textViewEcole.setText(ecole);
+            textViewNom.setText(nom);
+
+        }
 
 
 
@@ -46,8 +50,8 @@ public class ProfilActivity extends AppCompatActivity {
         btnModif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfilActivity.this,ModifyProfilActivity.class) ;
-
+                Intent intentmodif = new Intent(ProfilActivity.this,ModifyProfilActivity.class) ;
+                i ++ ;
             }
         });
 
@@ -56,8 +60,8 @@ public class ProfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(ProfilActivity.this, ConnexionActivity.class);
-                startActivity(intent);
+                Intent intentdeconnexion = new Intent(ProfilActivity.this, ConnexionActivity.class);
+                startActivity(intentdeconnexion);
             }
         });
 

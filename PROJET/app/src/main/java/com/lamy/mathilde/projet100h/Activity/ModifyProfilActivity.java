@@ -10,6 +10,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.lamy.mathilde.projet100h.R;
 
@@ -34,22 +35,10 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
             autoCompleteEcole = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewEcole);
             autoCompleteNom = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewNom);
 
+
             // récupération des valeurs saisies dans une chaine de caractères
-            getNom =autoCompleteNom.getText().toString();
-            getEcole =autoCompleteEcole.getText().toString();
-
-            // création des bundle pour associer une valeur à une clé
-            Bundle bundle = new Bundle();
-
-            // association de la clé à la valeur souhaitée
-            bundle.putString("nom", getNom);
-            bundle.putString("ecole", getEcole);
-
-            intent.putExtras(bundle);
-            intent.putExtras(bundle);
-
-            // envoie des valeurs saisies à l'activité profil
-            startActivity(intent);
+            getNom = autoCompleteNom.getText().toString();
+            getEcole = autoCompleteEcole.getText().toString();
 
 
             // redirection vers l'activité profil une fois les modificatiosn terminées
@@ -58,7 +47,23 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ModifyProfilActivity.this, ProfilActivity.class);
-                startActivity(intent);
+                if (!getNom.equals("") && !getNom.equals("")) {
+                    // création des bundle pour associer une valeur à une clé
+                    Bundle bundle = new Bundle();
+
+                    // association de la clé à la valeur souhaitée
+                    bundle.putString("nom", getNom);
+                    bundle.putString("ecole", getEcole);
+
+                    intent.putExtras(bundle);
+                    intent.putExtras(bundle);
+
+                    // envoie des valeurs saisies à l'activité profil
+                    startActivity(intent);
+
+                } else {
+                    Toast.makeText(ModifyProfilActivity.this, "Veuillez remplir les champs", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
