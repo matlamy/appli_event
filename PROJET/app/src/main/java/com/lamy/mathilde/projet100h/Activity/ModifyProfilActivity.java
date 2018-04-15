@@ -23,6 +23,7 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
     private String getNom ;
     private String getEcole ;
     private Button boutonSauvegarde ;
+    private Bundle bundle ;
 
 
     @Override
@@ -30,10 +31,13 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modify_profil);
 
+        boutonSauvegarde = (Button) findViewById(R.id.buttonSave) ;
+
         // Saisie du nom d'utilisateur et de l'école + envoie à l'activité profil
             Intent intent = new Intent(this, ProfilActivity.class) ;
             autoCompleteEcole = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewEcole);
             autoCompleteNom = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextViewNom);
+
 
 
             // récupération des valeurs saisies dans une chaine de caractères
@@ -42,20 +46,19 @@ public class ModifyProfilActivity extends AppCompatActivity implements AdapterVi
 
 
             // redirection vers l'activité profil une fois les modificatiosn terminées
-        boutonSauvegarde = (Button) findViewById(R.id.buttonSave) ;
+
         boutonSauvegarde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ModifyProfilActivity.this, ProfilActivity.class);
                 if (!getNom.equals("") && !getNom.equals("")) {
                     // création des bundle pour associer une valeur à une clé
-                    Bundle bundle = new Bundle();
+                    bundle = new Bundle();
 
                     // association de la clé à la valeur souhaitée
                     bundle.putString("nom", getNom);
                     bundle.putString("ecole", getEcole);
 
-                    intent.putExtras(bundle);
                     intent.putExtras(bundle);
 
                     // envoie des valeurs saisies à l'activité profil

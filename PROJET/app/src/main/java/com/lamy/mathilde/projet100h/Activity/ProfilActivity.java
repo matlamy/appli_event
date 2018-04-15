@@ -24,6 +24,9 @@ public class ProfilActivity extends AppCompatActivity {
     private TextView tVNomPrenom ;
     private TextView tVEcole ;
     private int i = 0 ;
+    private Bundle bundle ;
+    private String nom ;
+    private String ecole ;
 
 
     @Override
@@ -41,9 +44,9 @@ public class ProfilActivity extends AppCompatActivity {
 
         if (i!=0) {
             // Mise à jour du nom et l'école de l'utilisateur
-            Bundle bundle = getIntent().getExtras();
-            String nom = bundle.getString("nom");
-            String ecole = bundle.getString("ecole");
+            bundle = getIntent().getExtras();
+            nom = bundle.getString("nom");
+            ecole = bundle.getString("ecole");
 
             textViewEcole.setText(ecole);
             textViewEcole.setVisibility(View.VISIBLE);
